@@ -1,0 +1,45 @@
+<html>
+
+<head>
+<title>Test form</title>
+
+<link rel="stylesheet" type="text/css" href="./playground.css" />
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js" async></script>
+<script src="./submit_form.js" async></script>
+</head>
+
+<body>
+
+<h2>Test playground</h2>
+
+<div id="pgm_playground">
+<div id="pgm_server_response">{area for server status response...}</div>
+
+<form id="pgm_form" method="get" action="https://plv2eumi5l.execute-api.eu-west-2.amazonaws.com/prod/bfo" onSubmit="return submit_form(this)">
+<table cellspacing="0" cellpadding="3">
+  <tr>
+    <td width="1%"><label for="pgm_provider"><b>Provider:</b></label></td>
+    <td width="99%">
+      <select name="prefix" id="pgm_provider">
+        <option value="">(Select provider)</option>
+        <option value="PA">@Betting-Tipstrs-VIP</option>
+        <option value="MA">@BettorNinja</option>
+        <option value="BI">@Betloy, manual</option>
+        <option value="BJ">@Betloy, manual, email recommendation</option>
+      </select>
+    </td>
+  </tr>
+  <tr>
+    <td><label for="pgm_game"><b>Game:</b></label></td>
+    <td><input type="text" name="game_name" id="pgm_game" value="" /></td>
+  </tr>
+  <tr>
+    <td><label for="pgm_market"><b>Market:</b></label></td>
+    <td><input type="text" name="market_name" id="pgm_market" value="" /></td>
+  </tr>
+</table>
+<div id="pgm_submit"><input type="submit" value="Submit data!" id="pgm_submit_btn" /></div>
+</div>
+
+</body>
+</html>

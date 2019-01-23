@@ -1,0 +1,39 @@
+#pgm_playground {
+  width: 50%;
+  margin: 0 auto;
+}
+#pgm_playground table input,
+#pgm_playground table select {
+  width: 100%;
+}
+#pgm_form table {
+  background-color: #EFEFEF;
+  padding: 10px 12px;
+  width: 100%;
+  border: 0;
+}
+#pgm_server_response {
+  padding: 8px 12px;
+  font-size: 1.2em;
+  border: 1px dotted silver;
+}
+#pgm_server_response.success,
+#pgm_server_response.warn,
+#pgm_server_response.fail {
+  color: white;
+  font-weight: bold;
+}
+#pgm_server_response.success {
+  background-color: #2AA876; /* soft green */
+}
+#pgm_server_response.warn {
+  background-color: #FFD265; /* soft yellow */
+  color: black;
+}
+#pgm_server_response.fail {
+  background-color: #E8554E; /* soft red */
+}
+#pgm_submit {
+  margin: 1em 0 0 0;
+  text-align: center;
+}
